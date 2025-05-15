@@ -7,7 +7,49 @@
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body> 
+<body class="bg-[#632b6c]"> 
     
+    <!-- nav bar -->
+    <nav class="flex justify-between items-center ">
+        <!-- logo -->
+        <a href="#"><img src="../picture/public/logo.png" alt="" class="w-[25vw] sm:w-[16vw] ml-[2vw] mt-[1vh]"></a>
+        <div class="h-12 flex items-center">
+            
+            <span class="text-2xl text-white text-center hidden sm:block">
+                <select id="explore" class="w-[15vw] h-[10vh] text-center  focus:outline-none bg-[#632b6c]">
+                    <option value="" class="bg-white text-black hover:bg-[#624578] hover:text-white appearance-none">Explore</option>
+                    <option value="" class="bg-white text-black hover:bg-[#624578] hover:text-white">AI images</option>
+                    <option value="" class="bg-white text-black hover:bg-[#624578] hover:text-white">Nature</option>
+                    <option value="" class="bg-white text-black hover:bg-[#624578] hover:text-white">Food</option>
+                    <option value="" class="bg-white text-black hover:bg-[#624578] hover:text-white">Sports</option>
+                    <option value="" class="bg-white text-black hover:bg-[#624578] hover:text-white">Technology</option>
+                </select>
+            </span>
+
+            <span class="text-xs sm:text-xl text-white mx-[2vw] border-2 w-[20vw] sm:w-[10vw] h-[4vh] sm:h-[7vh] rounded-xl grid place-content-center"> <a href="./Sign_In.html"> <i class="fa-solid fa-user mr-[1vw]"></i>Sign In</a></span>
+
+            <div class=" flex items-center mr-[2vw]">
+                <div class="relative group">
+                    <button id="menuButton" class="text-white">
+                        <i class="fa-solid fa-bars sm:text-2xl"></i>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div class="absolute right-0 bg-white rounded-md group-hover:visible invisible transition-all duration-200 mt-[2vh] w-[25wh] sm:w-[15vw] text-center ">
+                        <a href="./Sign_In.html" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white hover:rounded-t-md">Sign In</a>
+                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Your Profile</a>
+                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Your Contributions</a>
+                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Your Sales</a>
+                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Uploads</a>
+                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Collections</a>
+                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Favorites</a>
+                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Settings</a>
+                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white hover:rounded-b-md">Log Out</a>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
 </body>
 </html>
