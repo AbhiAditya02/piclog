@@ -11,76 +11,458 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-[#632b6c]">
+<body>
+    <header class="bg-[url('../picture/public/bg.jpg')] bg-cover pb-4">
+        <!-- nav bar -->
+        <nav class="flex justify-between items-center ">
+            <!-- logo -->
+            <a href="#"><img src="../picture/public/logo.png" alt="" class="w-[25vw] sm:w-[16vw] ml-[2vw] mt-[1vh]"></a>
+            <!-- options -->
+            <div class="h-12 flex items-center">
+                <span class="text-2xl text-white text-center hidden sm:block">
+                    <select id="explore" class="w-[15vw] h-[10vh] text-center  focus:outline-none cursor-pointer">
+                        <option value="" class="bg-white text-black appearance-none">Explore</option>
+                        <option value="" class="bg-white text-black">AI images</option>
+                        <option value="" class="bg-white text-black">Nature</option>
+                        <option value="" class="bg-white text-black">Food</option>
+                        <option value="" class="bg-white text-black">Sports</option>
+                        <option value="" class="bg-white text-black">Technology
+                        </option>
+                    </select>
+                </span>
 
-    <!-- nav bar -->
-    <nav class="flex justify-between items-center ">
-        <!-- logo -->
-        <a href="#"><img src="../picture/public/logo.png" alt="" class="w-[25vw] sm:w-[16vw] ml-[2vw] mt-[1vh]"></a>
-        <div class="h-12 flex items-center">
+                <span class="text-xs sm:text-xl text-white mx-[2vw] border-2 w-[20vw] sm:w-[15vw] lg:w-[11vw] p-[1vw] rounded-xl grid place-content-center">
+                    <a href="./Sign_In.html"> <i class="fa-solid fa-user mr-[1vw]"></i>Sign In</a></span>
 
-            <span class="text-2xl text-white text-center hidden sm:block">
-                <select id="explore" class="w-[15vw] h-[10vh] text-center  focus:outline-none bg-[#632b6c]">
-                    <option value="" class="bg-white text-black hover:bg-[#624578] hover:text-white appearance-none">
-                        Explore</option>
-                    <option value="" class="bg-white text-black hover:bg-[#624578] hover:text-white">AI images</option>
-                    <option value="" class="bg-white text-black hover:bg-[#624578] hover:text-white">Nature</option>
-                    <option value="" class="bg-white text-black hover:bg-[#624578] hover:text-white">Food</option>
-                    <option value="" class="bg-white text-black hover:bg-[#624578] hover:text-white">Sports</option>
-                    <option value="" class="bg-white text-black hover:bg-[#624578] hover:text-white">Technology</option>
-                </select>
-            </span>
+                <div class=" flex items-center mr-[2vw]">
+                    <div class="relative group">
+                        <button id="menuButton" class="text-white">
+                            <i class="fa-solid fa-bars sm:text-2xl cursor-pointer"></i>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="absolute z-20 right-0 bg-white rounded-md group-hover:visible invisible transition-all duration-200 mt-[2vh] w-[25wh] sm:w-[20vw] lg:w-[15vw] text-center cursor-pointer">
+                            <a href="./Sign_In.html" class="block px-4 py-2 text-black hover:bg-gray-400 hover:rounded-t-md">Sign In</a>
+                            <a href="#" class="block px-4 py-2 text-black hover:bg-gray-400">Your Profile</a>
+                            <a href="#" class="block px-4 py-2 text-black hover:bg-gray-400">Your Contributions</a>
+                            <a href="#" class="block px-4 py-2 text-black hover:bg-gray-400">Your Sales</a>
+                            <a href="#" class="block px-4 py-2 text-black hover:bg-gray-400">Uploads</a>
+                            <a href="#" class="block px-4 py-2 text-black hover:bg-gray-400">Collections</a>
+                            <a href="#" class="block px-4 py-2 text-black hover:bg-gray-400">Favorites</a>
+                            <a href="#" class="block px-4 py-2 text-black hover:bg-gray-400">Settings</a>
+                            <a href="#" class="block px-4 py-2 text-black hover:bg-gray-400 hover:rounded-b-md">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-            <span
-                class="text-xs sm:text-xl text-white mx-[2vw] border-2 w-[20vw] sm:w-[15vw] lg:w-[11vw] p-[1vw] rounded-xl grid place-content-center">
-                <a href="./Sign_In.html"> <i class="fa-solid fa-user mr-[1vw]"></i>Sign In</a></span>
-
-            <div class=" flex items-center mr-[2vw]">
-                <div class="relative group">
-                    <button id="menuButton" class="text-white">
-                        <i class="fa-solid fa-bars sm:text-2xl"></i>
-                    </button>
-                    <!-- Dropdown menu -->
-                    <div
-                        class="absolute right-0 bg-white rounded-md group-hover:visible invisible transition-all duration-200 mt-[2vh] w-[25wh] sm:w-[15vw] text-center ">
-                        <a href="./Sign_In.html"
-                            class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white hover:rounded-t-md">Sign
-                            In</a>
-                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Your
-                            Profile</a>
-                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Your
-                            Contributions</a>
-                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Your
-                            Sales</a>
-                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Uploads</a>
-                        <a href="#"
-                            class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Collections</a>
-                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Favorites</a>
-                        <a href="#" class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white">Settings</a>
-                        <a href="#"
-                            class="block px-4 py-2 text-black hover:bg-[#624578] hover:text-white hover:rounded-b-md">Log
-                            Out</a>
-
+        <!-- search bar -->
+        <div class="flex justify-center my-[10vh]">
+            <div class="h-[6vh] lg:h-[9vh] grid place-content-center border-none bg-white w-[80vw] rounded-xl">
+                <div class="flex justify-center my-[2vh] sm:text-2xl lg:text-3xl ">
+                    <select id="types" class="text-center w-[25vw] md:w-[14vw] md:mr-4 focus:outline-none cursor-pointer">
+                        <option value="images">Images</option>
+                        <option value="Ai Images">AI Images</option>
+                    </select>
+                    <input type="text" placeholder="Search" class="w-[100%] md:w-[58vw] border-x-2 border-black pl-[2vw] focus:outline-none">
+                    <div class="w-[20vw] md:w-[7vw] flex justify-center items-center  border  border-none cursor-pointer">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- search bar -->
-    <div class="flex justify-center my-[3vh]">
-        <div class="h-[6vh] lg:h-[10vh] grid place-content-center border-2 border-black bg-white w-[80vw] rounded-xl">
-            <div class="flex justify-center my-[2vh] sm:text-2xl lg:text-3xl ">
-                <select id="types" class="border-r-2 border-black text-center w-[25vw] md:w-[15vw] focus:outline-none">
-                    <option value="images">Images</option>
-                    <option value="Ai Images">AI Images</option>
-                </select>
-                <input type="text" placeholder="Search" class="w-[100%] md:w-[58vw] border-r-2 border-black pl-[2vw]">
-                <div class="w-[20vw] md:w-[7vw] flex justify-center items-center  border  border-none ">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+    <!-- options section -->
+    <div class="hidden sm:block my-[2vh] px-[2vw]">
+        <div class=" flex lg:justify-center overflow-x-auto  scrollbar-hide">
+            <div class="flex">
+                <button class="border-2 border-gray-400 py-1 px-2 rounded-2xl h-auto w-20 flex justify-center items-center mr-2 cursor-pointer">Lifestyle</button>
+                <button class="border-2 border-gray-400 py-1 px-2 rounded-2xl h-auto w-20 flex justify-center items-center mr-2 cursor-pointer">Business</button>
+                <button class="border-2 border-gray-400 py-1 px-2 rounded-2xl h-auto w-20 flex justify-center items-center mr-2 cursor-pointer">Sports</button>
+                <button class="border-2 border-gray-400 py-1 px-2 rounded-2xl h-auto w-20 flex justify-center items-center mr-2 cursor-pointer">Foods</button>
+                <button class="border-2 border-gray-400 py-1 px-2 rounded-2xl h-auto w-20 flex justify-center items-center mr-2 cursor-pointer">Education</button>
+                <button class="border-2 border-gray-400 py-1 px-2 rounded-2xl h-auto w-20 flex justify-center items-center mr-2 cursor-pointer">Beauty</button>
+                <button class="border-2 border-gray-400 py-1 px-2 rounded-2xl h-auto w-20 flex justify-center items-center mr-2 cursor-pointer">Fasion</button>
+                <button class="border-2 border-gray-400 py-1 px-2 rounded-2xl h-auto w-20 flex justify-center items-center mr-2 cursor-pointer">Natures</button>
+                <button class="border-2 border-gray-400 py-1 px-2 rounded-2xl h-auto w-20 flex justify-center items-center mr-2 cursor-pointer">Health</button>
+                <button class="border-2 border-gray-400 py-1 px-2 rounded-2xl h-auto w-20 flex justify-center items-center mr-2 cursor-pointer">Festivals</button>
+                <button class="border-2 border-gray-400 py-1 px-2 rounded-2xl h-auto w-20 flex justify-center items-center mr-2 cursor-pointer">Marriage</button>
             </div>
         </div>
+    </div>
+
+    <!-- details -->
+     <div class="flex justify-between items-center sm:text-xl mx-[2vw] my-[2vh] cursor-pointer">
+        <div>Free Stock Images</div>
+        <div>
+            <select name="Types" class="border-2 border-gray-400 p-2 rounded-xl">
+                <option value="Trending ">Trending</option>
+                <option value="New">New</option>
+            </select>
+        </div>
+     </div>
+
+    <!-- Main Section -->
+    <div class="p-4">
+        <ul class="columns-2 sm:columns-3 lg:columns-4 space-y-4">
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-1.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Alex Carter</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-2.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Jamie Brooks</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-3.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Taylor Reed</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-4.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Jordon Lane</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-5.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Morgan Blake</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-6.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Casey Quinn</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-7.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Railey Stone</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-8.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Cameron Wells</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-9.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Drew Parker</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-10.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Aevery Flynn</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-11.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Sam Patel</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-12.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Lima Roy</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-13.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Emma Jain</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-14.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Noah Das</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white">
+                <img src="../picture/Gallery/img-15.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Riya Kapoor</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="relative group w-[100%] h-[100%] overflow-hidden rounded-xl cursor-pointer text-white sm:hidden lg:block">
+                <img src="../picture/Gallery/img-16.jpg" alt="">
+                <div
+                    class="absolute top-0 w-[100%] invisible group-hover:visible translate-x-10 group-hover:translate-x-0 transition duration-200">
+                    <div class="flex justify-end items-center p-[5%]">
+                        <i class="fa-regular fa-bookmark mr-[5%]"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-0 w-[100%] invisible group-hover:visible bg-gradient-to-t from-black to-transparen translate-y-10 group-hover:translate-y-0 transition duration-400">
+                    <div class="flex justify-between p-[5%]">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle mr-1"></i>
+                            <p class="hidden sm:block">Ethan Mehta</p>
+                        </div>
+                        <button class="flex items-center">
+                            <i class="fa-solid fa-download mr-1"></i><span class="hidden sm:block">Download</span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    
+        <section class="flex justify-center my-[2vw]">
+            <button class="border-2 p-1 rounded-2xl w-[30vw] sm:w-[15vw] lg:w-[11vw] cursor-pointer">Load More</button>
+        </section>
     </div>
 </body>
 </html>
