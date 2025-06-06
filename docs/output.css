@@ -202,9 +202,6 @@
   .mx-\[2vw\] {
     margin-inline: 2vw;
   }
-  .my-\[1vh\] {
-    margin-block: 1vh;
-  }
   .my-\[1vw\] {
     margin-block: 1vw;
   }
@@ -262,17 +259,8 @@
   .table {
     display: table;
   }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
   .h-3 {
     height: calc(var(--spacing) * 3);
-  }
-  .h-4 {
-    height: calc(var(--spacing) * 4);
-  }
-  .h-6 {
-    height: calc(var(--spacing) * 6);
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
@@ -289,29 +277,14 @@
   .h-\[20\%\] {
     height: 20%;
   }
-  .h-\[25\%\] {
-    height: 25%;
-  }
-  .h-\[25\] {
-    height: 25;
-  }
-  .h-\[25vh\] {
-    height: 25vh;
-  }
   .h-\[25vw\] {
     height: 25vw;
   }
   .h-\[80\%\] {
     height: 80%;
   }
-  .h-\[90vh\] {
-    height: 90vh;
-  }
   .h-\[100\%\] {
     height: 100%;
-  }
-  .h-\[100\] {
-    height: 100;
   }
   .h-\[100vh\] {
     height: 100vh;
@@ -319,29 +292,11 @@
   .h-auto {
     height: auto;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
-  }
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
-  .w-4 {
-    width: calc(var(--spacing) * 4);
-  }
-  .w-6 {
-    width: calc(var(--spacing) * 6);
-  }
   .w-20 {
     width: calc(var(--spacing) * 20);
-  }
-  .w-\[\(5\%\)\] {
-    width: (5%);
-  }
-  .w-\[0vw\] {
-    width: 0vw;
   }
   .w-\[15vw\] {
     width: 15vw;
@@ -367,14 +322,8 @@
   .w-\[80vw\] {
     width: 80vw;
   }
-  .w-\[95\%\] {
-    width: 95%;
-  }
   .w-\[100\%\] {
     width: 100%;
-  }
-  .w-\[100\] {
-    width: 100;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -419,9 +368,6 @@
   }
   .justify-evenly {
     justify-content: space-evenly;
-  }
-  .justify-start {
-    justify-content: flex-start;
   }
   .space-y-4 {
     :where(& > :not(:last-child)) {
@@ -471,9 +417,6 @@
   .border-gray-400 {
     border-color: var(--color-gray-400);
   }
-  .bg-\[url\] {
-    background-color: url;
-  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -490,59 +433,14 @@
     --tw-gradient-position: to top in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\'\.\.\/\'\)\] {
-    background-image: url('../');
-  }
-  .bg-\[url\(\'\.\.\/pic\'\)\] {
-    background-image: url('../pic');
-  }
-  .bg-\[url\(\'\.\.\/picture\'\)\] {
-    background-image: url('../picture');
-  }
-  .bg-\[url\(\'\.\.\/picture\/\'\)\] {
-    background-image: url('../picture/');
-  }
-  .bg-\[url\(\'\.\.\/picture\/Sign_In\/Img-1\.\'\)\] {
-    background-image: url('../picture/Sign_In/Img-1.');
-  }
-  .bg-\[url\(\'\.\.\/picture\/Sign_In\/Img-1\.\.png\'\)\] {
-    background-image: url('../picture/Sign_In/Img-1..png');
-  }
-  .bg-\[url\(\'\.\.\/picture\/Sign_In\/Img-1\.P\'\)\] {
-    background-image: url('../picture/Sign_In/Img-1.P');
-  }
   .bg-\[url\(\'\.\.\/picture\/Sign_In\/Img-1\.png\'\)\] {
     background-image: url('../picture/Sign_In/Img-1.png');
   }
-  .bg-\[url\(\'\.\.\/picture\/pu\'\)\] {
-    background-image: url('../picture/pu');
+  .bg-\[url\(\'\.\/picture\/Sign_In\/Img-1\.png\'\)\] {
+    background-image: url('./picture/Sign_In/Img-1.png');
   }
-  .bg-\[url\(\'\.\.\/picture\/public\/bg\.jpg\'\)\] {
-    background-image: url('../picture/public/bg.jpg');
-  }
-  .bg-\[url\(\'\.\.\/picture\/sign\'\)\] {
-    background-image: url('../picture/sign');
-  }
-  .bg-\[url\(\'\.\.\/picture\/sign_In\/Img-1\.\.png\'\)\] {
-    background-image: url('../picture/sign_In/Img-1..png');
-  }
-  .bg-\[url\(\'\.\.\/picture\/sign_in\/\'\)\] {
-    background-image: url('../picture/sign_in/');
-  }
-  .bg-\[url\(\'\.\.\/picture\/sign_in\/I\'\)\] {
-    background-image: url('../picture/sign_in/I');
-  }
-  .bg-\[url\(\'\.\.\/picture\/sign_in\/Im\'\)\] {
-    background-image: url('../picture/sign_in/Im');
-  }
-  .bg-\[url\(\'\.\.\/picture\/sign_in\/Img\'\)\] {
-    background-image: url('../picture/sign_in/Img');
-  }
-  .bg-\[url\(\'\.\.\/picture\/sign_in\/Img-1\'\)\] {
-    background-image: url('../picture/sign_in/Img-1');
-  }
-  .bg-\[url\(\'\.\.\/picture\/sign_in\/Img-1\.\.png\'\)\] {
-    background-image: url('../picture/sign_in/Img-1..png');
+  .bg-\[url\(\'\.\/picture\/public\/bg\.jpg\'\)\] {
+    background-image: url('./picture/public/bg.jpg');
   }
   .from-black {
     --tw-gradient-from: var(--color-black);
@@ -560,17 +458,8 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
-  }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
-  }
   .p-\[1vw\] {
     padding: 1vw;
-  }
-  .p-\[2vw\] {
-    padding: 2vw;
   }
   .p-\[5\%\] {
     padding: 5%;
@@ -593,9 +482,6 @@
   .py-\[1vh\] {
     padding-block: 1vh;
   }
-  .pt-\[1vh\] {
-    padding-top: 1vh;
-  }
   .pt-\[2vh\] {
     padding-top: 2vh;
   }
@@ -607,9 +493,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .text-start {
-    text-align: start;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -731,11 +614,6 @@
       width: calc(var(--spacing) * 6);
     }
   }
-  .sm\:w-\[1vw\] {
-    @media (width >= 40rem) {
-      width: 1vw;
-    }
-  }
   .sm\:w-\[10vw\] {
     @media (width >= 40rem) {
       width: 10vw;
@@ -831,11 +709,6 @@
   .lg\:w-\[15vw\] {
     @media (width >= 64rem) {
       width: 15vw;
-    }
-  }
-  .lg\:w-\[vw\] {
-    @media (width >= 64rem) {
-      width: vw;
     }
   }
   .lg\:columns-4 {
